@@ -72,9 +72,11 @@ function __generator(thisArg, body) {
 function escapeRegExp(string) {
     return string.replace(/[.*+\-?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
 }
+
 function replaceAll(str, search, replacement) {
     return str.replace(new RegExp(escapeRegExp(search), "g"), replacement);
 }
+
 var OdataProvider = /** @class */ (function () {
     function OdataProvider(options) {
         var _this = this;
@@ -837,6 +839,7 @@ var OdataProvider = /** @class */ (function () {
     };
     return OdataProvider;
 }());
+
 var OdataProviderClient = /** @class */ (function (_super) {
     __extends(OdataProviderClient, _super);
     function OdataProviderClient() {
